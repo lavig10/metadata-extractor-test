@@ -151,3 +151,7 @@ app.post("/api/preview", async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
